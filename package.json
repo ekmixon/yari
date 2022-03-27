@@ -29,7 +29,8 @@
     "test:testing": "cd testing && jest",
     "tool": "node tool/cli.js",
     "watch:ssr": "cd ssr && webpack --mode=production --watch",
-    "prepare": "husky install"
+    "prepare": "yarn run snyk-protect && husky install",
+    "snyk-protect": "snyk-protect"
   },
   "resolutions": {
     "@typescript-eslint/typescript-estree": ">=4.15.2",
@@ -98,7 +99,8 @@
     "tempy": "1.0.1",
     "unified": "^9.2.1",
     "unist-builder": "^2.0.3",
-    "unist-util-visit": "2.0.3"
+    "unist-util-visit": "2.0.3",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -170,5 +172,6 @@
   },
   "engines": {
     "node": ">=12.11"
-  }
+  },
+  "snyk": true
 }
