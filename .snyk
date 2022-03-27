@@ -1,0 +1,1100 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.22.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@caporal/core > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - inquirer > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - benchmark > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - eslint > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - stylelint > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - stylelint-scss > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@caporal/core > table > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/preset-create-react-app > babel-plugin-react-docgen > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > babel-plugin-react-docgen > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - eslint > @eslint/eslintrc > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > eslint > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > @babel/core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > eslint-plugin-flowtype > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > html-webpack-plugin > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > webpack-manifest-plugin > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - stylelint-config-sass-guidelines > stylelint-order > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - stylelint-config-sass-guidelines > stylelint-scss > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@caporal/core > tabtab > inquirer > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@caporal/core > winston > async > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core-common > @babel/register > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > eslint > @eslint/eslintrc > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - jest-environment-jsdom-sixteen > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > babel-preset-react-app > @babel/core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - stylelint-config-sass-guidelines > stylelint-order > postcss-sorting > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > webpack-dev-server > portfinder > async > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-links > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @mdx-js/mdx > @babel/core > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core-common > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > html-webpack-plugin > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > html-webpack-plugin > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - jest-environment-jsdom-sixteen > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - jest-environment-jsdom-sixteen > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - jest-puppeteer > jest-environment-puppeteer > jest-dev-server > wait-on > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-a11y > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-backgrounds > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-viewport > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @mdx-js/mdx > remark-mdx > @babel/core > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @mdx-js/loader > @mdx-js/mdx > @babel/core > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > babel-preset-react-app > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/core-common > @babel/register > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/register > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > html-webpack-plugin > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > html-webpack-plugin > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-actions > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-controls > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-toolbars > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/source-loader > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @mdx-js/loader > @mdx-js/mdx > remark-mdx > @babel/core > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/core-common > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > workbox-webpack-plugin > workbox-build > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/register > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/register > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > html-webpack-plugin > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/components > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > babel-preset-react-app > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > @svgr/webpack > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > babel-preset-react-app > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/register > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runner > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/components > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/channel-postmessage > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > workbox-webpack-plugin > workbox-build > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > workbox-webpack-plugin > workbox-build > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/plugin-transform-classes > @babel/helper-define-map > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runner > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runner > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/csf > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > @storybook/router > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/client-api > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-client > @storybook/ui > @storybook/addons > @storybook/api > telejson > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/builder-webpack4 > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest-circus > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/react > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-proposal-unicode-property-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - '@storybook/addon-essentials > @storybook/addon-docs > @storybook/core > @storybook/core-server > @storybook/builder-webpack4 > @storybook/core-common > @babel/preset-env > @babel/preset-modules > @babel/plugin-transform-dotall-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > data-urls > whatwg-url > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
+    - react-scripts > jest > jest-cli > @jest/core > jest-runner > jest-runtime > jest-config > jest-environment-jsdom > jsdom > request-promise-native > request-promise-core > lodash:
+        patched: '2022-03-27T21:51:47.897Z'
