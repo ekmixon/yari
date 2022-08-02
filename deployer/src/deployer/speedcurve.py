@@ -20,7 +20,7 @@ def deploy_ping(
         data["detail"] = detail
 
     if dry_run:
-        log.info(f"Posting {data} to {POST_URL} with API key {api_key[:3] + '...'!r}")
+        log.info(f"Posting {data} to {POST_URL} with API key {api_key[:3]}...")
         return
 
     adapter = HTTPAdapter(

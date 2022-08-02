@@ -38,9 +38,7 @@ def iterdir(directory, max_depth=None, current_depth=0):
 def fmt_size(bytes_):
     if bytes_ > 1024 * 1024:
         return f"{bytes_ / 1024 / 1024:.1f}MB"
-    if bytes_ > 1024:
-        return f"{bytes_ / 1024:.1f}KB"
-    return f"{int(bytes_)}B"
+    return f"{bytes_ / 1024:.1f}KB" if bytes_ > 1024 else f"{int(bytes_)}B"
 
 
 def fmt_seconds(seconds):

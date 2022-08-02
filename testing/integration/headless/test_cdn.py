@@ -75,9 +75,12 @@ def assert_not_cached(
         response2 = assert_not_cached_by_cdn(
             url, expected_status_code, expected_location, method, **request_kwargs
         )
-        if expected_status_code in (301, 302) and not expected_location:
-            if "/users/github/login/" not in url:
-                assert response2.headers["location"] == response1.headers["location"]
+        if (
+            expected_status_code in (301, 302)
+            and not expected_location
+            and "/users/github/login/" not in url
+        ):
+            assert response2.headers["location"] == response1.headers["location"]
         return response2
 
     response = request(method, url, **request_kwargs)
@@ -215,7 +218,7 @@ def test_cached(base_url, is_behind_cdn, slug, status, expected_location):
 )
 def test_cached_attachments(base_url, attachment_url, is_behind_cdn, slug, status):
     """Ensure that these file-attachment requests are cached."""
-    expected_location = attachment_url + "/files/2767/hut.jpg"
+    expected_location = f"{attachment_url}/files/2767/hut.jpg"
     assert_cached(base_url + slug, status, expected_location, is_behind_cdn)
 
 
@@ -234,4 +237,4 @@ def test_zones_without_locale(base_url, is_behind_cdn, zone, status, expected_lo
     Ensure that these zone requests without a locale should redirect and that they
     are cached.
     """
-    assert_cached(base_url + f"/{zone}", status, expected_location, is_behind_cdn)
+    assert_cached(f"{base_url}/{zone}", status, expected_location, is_behind_cdn)

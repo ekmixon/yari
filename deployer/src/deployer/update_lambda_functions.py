@@ -51,15 +51,13 @@ def make_package(lambda_function_dir):
         text=True,
         stdout=subprocess.PIPE,
     )
-    # If we created a zip package, return the filename.
     for zip_filename in lambda_function_dir.glob("*.zip"):
         return zip_filename
-    else:
-        # Otherwise, something went wrong.
-        raise PackageError(
-            "failed to create an AWS Lambda deployment package (Zip file)\n\n"
-            f"{subprocess_result.stdout}"
-        )
+    # Otherwise, something went wrong.
+    raise PackageError(
+        "failed to create an AWS Lambda deployment package (Zip file)\n\n"
+        f"{subprocess_result.stdout}"
+    )
 
 
 def update(lambda_function_dir, dry_run=False):
@@ -88,8 +86,7 @@ def update_all(directory: Path, dry_run=False):
     for lambda_function_dir in get_lambda_function_dirs(directory):
         log.info(f"Found {lambda_function_dir.stem}: ", nl=False)
 
-        info = update(lambda_function_dir, dry_run=dry_run)
-        if info:
+        if info := update(lambda_function_dir, dry_run=dry_run):
             if dry_run:
                 log.info(
                     f"would have published a new version of {info['FunctionName']}"

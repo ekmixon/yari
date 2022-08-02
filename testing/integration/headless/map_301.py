@@ -696,20 +696,20 @@ zone_url_test_kwargs = {
 ZONE_REDIRECT_URLS = []
 for zone_root, wiki_slug, locales in zone_redirects:
     for locale in locales:
-        prefix = ("/" + locale) if locale else ""
-        redirect_path = prefix + "/docs/" + wiki_slug
-        paths = [prefix + "/" + zone_root]
+        prefix = f"/{locale}" if locale else ""
+        redirect_path = f"{prefix}/docs/{wiki_slug}"
+        paths = [f"{prefix}/{zone_root}"]
         # Test with a "docs" based path as well if it makes sense.
         if zone_root != wiki_slug:
-            paths.append(prefix + "/docs/" + zone_root)
+            paths.append(f"{prefix}/docs/{zone_root}")
         for path in paths:
-            # The zone root without a trailing slash.
-            ZONE_REDIRECT_URLS.append(
-                url_test(path, redirect_path, **zone_url_test_kwargs)
-            )
-            # The zone root with a trailing slash.
-            ZONE_REDIRECT_URLS.append(
-                url_test(path + "/", redirect_path, **zone_url_test_kwargs)
+            ZONE_REDIRECT_URLS.extend(
+                (
+                    url_test(path, redirect_path, **zone_url_test_kwargs),
+                    url_test(
+                        f"{path}/", redirect_path, **zone_url_test_kwargs
+                    ),
+                )
             )
 
 # Redirects added after 2017 AWS move
@@ -728,7 +728,7 @@ marionette_docs_root_url = (
     "https://firefox-source-docs.mozilla.org/testing/marionette/marionette/"
 )
 marionette_locales = "{/en-US,/fr,/ja,/pl,/pt-BR,/ru,/zh-CN,}"
-marionette_base = marionette_locales + "/docs/Mozilla/QA/Marionette"
+marionette_base = f"{marionette_locales}/docs/Mozilla/QA/Marionette"
 marionette_multi_base = marionette_locales + "/docs/{Mozilla/QA/,}Marionette"
 marionette_python_tests = (
     "{MarionetteTestCase,Marionette_Python_Tests,Running_Tests,Tests}"
@@ -737,51 +737,58 @@ marionette_python_tests = (
 MARIONETTE_URLS = list(
     flatten(
         (
-            url_test(marionette_multi_base, marionette_docs_root_url + "index.html"),
             url_test(
-                marionette_multi_base + "/Builds",
-                marionette_docs_root_url + "Building.html",
-            ),
-            url_test(marionette_multi_base + "/Client", marionette_client_docs_url),
-            url_test(
-                marionette_multi_base + "/Developer_setup",
-                marionette_docs_root_url + "Contributing.html",
+                marionette_multi_base, f"{marionette_docs_root_url}index.html"
             ),
             url_test(
-                marionette_multi_base + "/" + marionette_python_tests,
-                marionette_docs_root_url + "PythonTests.html",
+                f"{marionette_multi_base}/Builds",
+                f"{marionette_docs_root_url}Building.html",
             ),
             url_test(
-                marionette_locales + "/docs/Marionette_Test_Runner",
-                marionette_docs_root_url + "PythonTests.html",
+                f"{marionette_multi_base}/Client", marionette_client_docs_url
             ),
             url_test(
-                marionette_base + "/Marionette_Test_Runner",
-                marionette_docs_root_url + "PythonTests.html",
+                f"{marionette_multi_base}/Developer_setup",
+                f"{marionette_docs_root_url}Contributing.html",
             ),
             url_test(
-                marionette_base + "/Protocol",
-                marionette_docs_root_url + "Protocol.html",
+                f"{marionette_multi_base}/{marionette_python_tests}",
+                f"{marionette_docs_root_url}PythonTests.html",
             ),
-            url_test(marionette_base + "/Python_Client", marionette_client_docs_url),
             url_test(
-                marionette_base + "/WebDriver/status",
+                f"{marionette_locales}/docs/Marionette_Test_Runner",
+                f"{marionette_docs_root_url}PythonTests.html",
+            ),
+            url_test(
+                f"{marionette_base}/Marionette_Test_Runner",
+                f"{marionette_docs_root_url}PythonTests.html",
+            ),
+            url_test(
+                f"{marionette_base}/Protocol",
+                f"{marionette_docs_root_url}Protocol.html",
+            ),
+            url_test(
+                f"{marionette_base}/Python_Client", marionette_client_docs_url
+            ),
+            url_test(
+                f"{marionette_base}/WebDriver/status",
                 "https://bugzilla.mozilla.org"
                 "/showdependencytree.cgi?id=721859&hide_resolved=1",
             ),
             url_test(
-                marionette_locales + "/docs/Marionette/Debugging",
-                marionette_docs_root_url + "Debugging.html",
+                f"{marionette_locales}/docs/Marionette/Debugging",
+                f"{marionette_docs_root_url}Debugging.html",
             ),
         )
     )
 )
 
+
 WEBEXT_URLS = list(
     flatten(
         url_test(
             "{/en-US,/fr,}/docs/Mozilla/Add-ons/" + ao_path,
-            "https://extensionworkshop.com/documentation/" + ew_path,
+            f"https://extensionworkshop.com/documentation/{ew_path}",
         )
         for ao_path, ew_path in (
             (
@@ -878,7 +885,10 @@ WEBEXT_URLS = list(
                 "Themes/Using_the_AMO_theme_generator",
                 "themes/using-the-amo-theme-generator/",
             ),
-            ("WebExtensions/Developer_accounts", "publish/developer-accounts/"),
+            (
+                "WebExtensions/Developer_accounts",
+                "publish/developer-accounts/",
+            ),
             (
                 "Distribution",
                 "publish/signing-and-distribution-overview/#distributing-your-addon",
@@ -887,7 +897,10 @@ WEBEXT_URLS = list(
                 "WebExtensions/Package_your_extension_",
                 "publish/package-your-extension/",
             ),
-            ("Distribution/Submitting_an_add-on", "publish/submitting-an-add-on/"),
+            (
+                "Distribution/Submitting_an_add-on",
+                "publish/submitting-an-add-on/",
+            ),
             ("Source_Code_Submission", "publish/source-code-submission/"),
             (
                 "Distribution/Resources_for_publishers",
@@ -903,8 +916,14 @@ WEBEXT_URLS = list(
                 "publish/promoting-your-extension/",
             ),
             ("AMO/Policy/Reviews", "publish/add-on-policies/"),
-            ("AMO/Policy/Agreement", "publish/firefox-add-on-distribution-agreement/"),
-            ("Distribution/Retiring_your_extension", "manage/retiring-your-extension/"),
+            (
+                "AMO/Policy/Agreement",
+                "publish/firefox-add-on-distribution-agreement/",
+            ),
+            (
+                "Distribution/Retiring_your_extension",
+                "manage/retiring-your-extension/",
+            ),
             (
                 "WebExtensions/Distribution_options/Sideloading_add-ons",
                 "publish/distribute-sideloading/",
@@ -918,7 +937,10 @@ WEBEXT_URLS = list(
                 "enterprise/",
             ),
             ("AMO/Blocking_Process", "publish/add-ons-blocking-process/"),
-            ("Third_Party_Library_Usage", "publish/third-party-library-usage/"),
+            (
+                "Third_Party_Library_Usage",
+                "publish/third-party-library-usage/",
+            ),
             (
                 "WebExtensions/What_does_review_rejection_mean_to_users",
                 "publish/what-does-review-rejection-mean-to-users/",
@@ -927,6 +949,7 @@ WEBEXT_URLS = list(
         )
     )
 )
+
 
 FIREFOX_ACCOUNTS_URLS = list(
     flatten(

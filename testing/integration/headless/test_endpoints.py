@@ -25,7 +25,7 @@ def is_indexed(base_url):
 
 
 def test_document(base_url, is_indexed):
-    url = base_url + "/en-US/docs/Web"
+    url = f"{base_url}/en-US/docs/Web"
     resp = request("get", url)
     assert resp.status_code == 200
     assert resp.headers["Content-Type"] == "text/html; charset=utf-8"
@@ -40,7 +40,7 @@ def test_document(base_url, is_indexed):
 
 def test_document_based_redirection(base_url):
     """Ensure that content-based redirects properly redirect."""
-    url = base_url + "/en-US/docs/concat"
+    url = f"{base_url}/en-US/docs/concat"
     resp = request("get", url)
     assert resp.status_code == 301
     assert (
@@ -50,7 +50,7 @@ def test_document_based_redirection(base_url):
 
 
 def test_home(base_url, is_indexed):
-    url = base_url + "/en-US/"
+    url = f"{base_url}/en-US/"
     resp = request("get", url)
     assert resp.status_code == 200
     assert resp.headers["Content-Type"] == "text/html; charset=utf-8"
@@ -67,7 +67,7 @@ def test_home(base_url, is_indexed):
 
 def test_hreflang_basic(base_url):
     """Ensure that we're specifying the correct value for lang and hreflang."""
-    url = base_url + "/en-US/docs/Web/HTTP"
+    url = f"{base_url}/en-US/docs/Web/HTTP"
     resp = request("get", url)
     assert resp.status_code == 200
     html = PyQuery(resp.text)
@@ -89,10 +89,7 @@ def test_api_basic(base_url, uri, expected_keys):
     assert resp.headers.get("content-type") == "application/json"
     data = resp.json()
     for item in expected_keys:
-        if isinstance(item, tuple):
-            key, sub_keys = item
-        else:
-            key, sub_keys = item, ()
+        key, sub_keys = item if isinstance(item, tuple) else (item, ())
         assert key in data
         for sub_key in sub_keys:
             assert sub_key in data[key]
@@ -156,4 +153,4 @@ def test_locale_selection(base_url, slug, expected, cookie, accept):
     extra = "?".join(p.strip("/") for p in slug.split("?"))
     assert response.headers["location"].startswith(
         f"/{expected}/{extra}"
-    ), f"{response.headers['location']} does not start with {f'/{expected}/{extra}'}"
+    ), f"{response.headers['location']} does not start with /{expected}/{extra}"

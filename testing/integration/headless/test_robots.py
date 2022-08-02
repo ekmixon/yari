@@ -6,7 +6,7 @@ from . import INDEXED_WEB_DOMAINS
 
 
 def test_robots(base_url):
-    url = base_url + "/robots.txt"
+    url = f"{base_url}/robots.txt"
     response = requests.get(url)
     assert response.status_code == 200
 

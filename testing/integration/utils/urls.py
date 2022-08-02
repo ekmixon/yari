@@ -7,10 +7,7 @@ import requests
 
 # https://github.com/mozilla/bedrock/blob/master/tests/redirects/base.py
 def get_abs_url(url, base_url):
-    if url.startswith("/"):
-        # urljoin messes with query strings too much
-        return "".join([base_url, url])
-    return url
+    return "".join([base_url, url]) if url.startswith("/") else url
 
 
 # https://github.com/mozilla/bedrock/blob/master/tests/redirects/base.py

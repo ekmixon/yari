@@ -136,20 +136,15 @@ def index(
         # This code can be deleted any time after it's been useful once
         # in all deployments.
         legacy_index = Index(INDEX_ALIAS_NAME)
-        if legacy_index.exists():
-            # But `.exists()` will be true if it's an alias as well! It basically
-            # answers: "Yes, it's an index or an alias".
-            # We only want to delete it if it's an index. The test for that
-            # is to see if it does *not* have an alias.
-            if (
-                INDEX_ALIAS_NAME in legacy_index.get_alias()
-                and not legacy_index.get_alias()[INDEX_ALIAS_NAME]["aliases"]
-            ):
-                click.echo(
-                    f"Delete the old {INDEX_ALIAS_NAME!r} index from when it was "
-                    "an actual index."
-                )
-                legacy_index.delete(ignore=404)
+        if legacy_index.exists() and (
+            INDEX_ALIAS_NAME in legacy_index.get_alias()
+            and not legacy_index.get_alias()[INDEX_ALIAS_NAME]["aliases"]
+        ):
+            click.echo(
+                f"Delete the old {INDEX_ALIAS_NAME!r} index from when it was "
+                "an actual index."
+            )
+            legacy_index.delete(ignore=404)
 
         # Now we're going to bundle the change to set the alias to point
         # to the new index and delete all old indexes.
@@ -158,10 +153,12 @@ def index(
             {"add": {"index": document_index._name, "alias": INDEX_ALIAS_NAME}}
         ]
         for index_name in connection.indices.get_alias():
-            if index_name.startswith("mdn_docs_"):
-                if index_name != document_index._name:
-                    alias_updates.append({"remove_index": {"index": index_name}})
-                    click.echo(f"Delete old index {index_name!r}")
+            if (
+                index_name.startswith("mdn_docs_")
+                and index_name != document_index._name
+            ):
+                alias_updates.append({"remove_index": {"index": index_name}})
+                click.echo(f"Delete old index {index_name!r}")
 
         connection.indices.update_aliases({"actions": alias_updates})
         click.echo(
@@ -245,7 +242,9 @@ def to_search(file, _index=None):
         # files.
         return
     locale = locale[1:]
-    d = Document(
+    # print(dir(d))
+    # raise Exception
+    return Document(
         _index=_index,
         _id=doc["mdn_url"],
         title=doc["title"],
@@ -285,7 +284,8 @@ def to_search(file, _index=None):
         #
         # When searching though, we don't necessary want to think of all (for example)
         # French documents to be archived. Hence the following logic.
-        archived=(doc.get("isArchive") and not doc.get("isTranslated")) or False,
+        archived=(doc.get("isArchive") and not doc.get("isTranslated"))
+        or False,
         body=html_strip(
             "\n".join(
                 x["value"]["content"]
@@ -307,9 +307,6 @@ def to_search(file, _index=None):
         slug=slug.lower(),
         locale=locale.lower(),
     )
-    # print(dir(d))
-    # raise Exception
-    return d
 
 
 _display_none_regex = re.compile(r"display:\s*none")

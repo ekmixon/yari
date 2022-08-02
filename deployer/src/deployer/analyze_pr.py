@@ -30,9 +30,8 @@ def analyze_pr(build_directory: Path, config):
         combined_comments.append(post_about_flaws(build_directory, **config))
 
     if config["analyze_dangerous_content"]:
-        diff_file = config["diff_file"]
         patch = None
-        if diff_file:
+        if diff_file := config["diff_file"]:
             with open(diff_file) as f:
                 patch = PatchSet(f.read())
         combined_comments.append(
@@ -58,7 +57,7 @@ def analyze_pr(build_directory: Path, config):
         print("Warning! No 'repo' config")
     elif not config["pr_number"]:
         print("Warning! No 'pr_number' config")
-    elif config["repo"] and config["pr_number"]:
+    else:
         pr_url = f"https://github.com/{config['repo']}/pull/{config['pr_number']}"
         if config["dry_run"]:
             log.warning(f"Dry-run! Not actually posting any comment to {pr_url}")
@@ -71,12 +70,14 @@ def analyze_pr(build_directory: Path, config):
             github_repo = github.get_repo(config["repo"])
             github_issue = github_repo.get_issue(number=int(config["pr_number"]))
             for comment in github_issue.get_comments():
-                if comment.user.login == "github-actions[bot]":
-                    if hidden_comment_regex.search(comment.body):
-                        combined_comment += f"\n\n*(this comment was updated {datetime.datetime.utcnow()})*"
-                        comment.edit(body=combined_comment)
-                        print(f"Updating existing comment ({comment})")
-                        break
+                if (
+                    comment.user.login == "github-actions[bot]"
+                    and hidden_comment_regex.search(comment.body)
+                ):
+                    combined_comment += f"\n\n*(this comment was updated {datetime.datetime.utcnow()})*"
+                    comment.edit(body=combined_comment)
+                    print(f"Updating existing comment ({comment})")
+                    break
 
             else:
                 github_issue.create_comment(combined_comment)
@@ -94,7 +95,7 @@ def post_about_deployment(build_directory: Path, **config):
     if links:
         return heading + "\n".join(links)
 
-    return heading + "*seems not a single file was built!* 🙀"
+    return f"{heading}*seems not a single file was built!* 🙀"
 
 
 def mdn_url_to_dev_url(prefix, mdn_url):
@@ -121,13 +122,18 @@ def post_about_dangerous_content(
             if x["type"] == "prose" and x["value"]["content"]
         )
 
-        diff_lines = None
-        for file_path in patch_lines:
-            if file_path.endswith(
-                "/".join([doc["source"]["folder"], doc["source"]["filename"]])
-            ):
-                diff_lines = patch_lines[file_path]
-                break
+        diff_lines = next(
+            (
+                patch_lines[file_path]
+                for file_path in patch_lines
+                if file_path.endswith(
+                    "/".join(
+                        [doc["source"]["folder"], doc["source"]["filename"]]
+                    )
+                )
+            ),
+            None,
+        )
 
         tree = HTMLParser(rendered_html)
         external_urls = defaultdict(int)
@@ -140,9 +146,8 @@ def post_about_dangerous_content(
                 if any(href.lower().startswith(x.lower()) for x in OK_URL_PREFIXES):
                     # exceptions are skipped
                     continue
-                if diff_lines:
-                    if href not in diff_lines:
-                        continue
+                if diff_lines and href not in diff_lines:
+                    continue
                 external_urls[href] += 1
 
         if external_urls:
@@ -165,25 +170,28 @@ def post_about_dangerous_content(
             comments.append((doc, "No external URLs"))
 
     heading = "## External URLs\n\n"
-    if comments:
-        per_doc_comments = []
-        for doc, comment in comments:
-            lines = []
-            if config["prefix"]:
-                url = mdn_url_to_dev_url(config["prefix"], doc["mdn_url"])
-                lines.append(f"URL: [`{doc['mdn_url']}`]({url})")
-            else:
-                lines.append(f"URL: `{doc['mdn_url']}`")
-            lines.append(f"Title: `{doc['title']}`")
-            lines.append(f"[on GitHub]({doc['source']['github_url']})")
-            lines.append("")
-            lines.append(comment)
-            lines.append("")
+    if not comments:
+        return f"{heading}*no external links in the built pages* 👱🏽"
+    per_doc_comments = []
+    for doc, comment in comments:
+        lines = []
+        if config["prefix"]:
+            url = mdn_url_to_dev_url(config["prefix"], doc["mdn_url"])
+            lines.append(f"URL: [`{doc['mdn_url']}`]({url})")
+        else:
+            lines.append(f"URL: `{doc['mdn_url']}`")
+        lines.extend(
+            (
+                f"Title: `{doc['title']}`",
+                f"[on GitHub]({doc['source']['github_url']})",
+                "",
+                comment,
+                "",
+            )
+        )
 
-            per_doc_comments.append("\n".join(lines))
-        return heading + "\n---\n".join(per_doc_comments)
-    else:
-        return heading + "*no external links in the built pages* 👱🏽"
+        per_doc_comments.append("\n".join(lines))
+    return heading + "\n---\n".join(per_doc_comments)
 
 
 def post_about_flaws(build_directory: Path, **config):
@@ -255,7 +263,7 @@ def post_about_flaws(build_directory: Path, **config):
             per_doc_comments.append("\n".join(lines))
         return heading + "\n\n---\n\n".join(per_doc_comments)
     else:
-        return heading + "*None!* 🎉"
+        return f"{heading}*None!* 🎉"
 
 
 def get_built_docs(build_directory: Path):
@@ -305,9 +313,6 @@ def get_patch_lines(patch: PatchSet):
             file_path = patched_file.target_file[2:]
         new_lines = []
         for hunk in patched_file:
-            for line in hunk:
-                if line.line_type == "+":
-                    new_lines.append(line.value)
-
+            new_lines.extend(line.value for line in hunk if line.line_type == "+")
         patch_lines[file_path] = "".join(new_lines)
     return patch_lines

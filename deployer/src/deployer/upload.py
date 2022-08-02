@@ -297,9 +297,7 @@ class BucketManager:
 
     @property
     def key_prefix(self):
-        if self.bucket_prefix:
-            return f"{self.bucket_prefix.lower()}/"
-        return ""
+        return f"{self.bucket_prefix.lower()}/" if self.bucket_prefix else ""
 
     @cached_property
     def client(self):
